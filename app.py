@@ -7,7 +7,7 @@ import joblib
 import os
 
 app = Flask(__name__)
-os.chdir("/")
+os.chdir("/Users/christine.caoeverlane.com/Doctor_Note_ProblemSeverity")
 #clf = pickle.load(open('NB_dr_model.pkl', 'rb'))
 
 @app.route('/')

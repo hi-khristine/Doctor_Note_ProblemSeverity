@@ -19,7 +19,7 @@ def home():
 def predict():
     NB_spam_model = open('xgb_dr_model.pkl', 'rb')
     clf = joblib.load(NB_spam_model)
-    NB_cv = open('NB_cv.pkl', 'rb')
+    NB_cv = open('xgb_cv.pkl', 'rb')
     cv = joblib.load(NB_cv)
 
     # df = pd.read_csv("spam.csv", encoding="latin-1")

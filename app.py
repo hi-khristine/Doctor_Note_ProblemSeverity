@@ -17,7 +17,7 @@ def home():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    NB_spam_model = open('NB_dr_model.pkl', 'rb')
+    NB_spam_model = open('xgb_dr_model.pkl', 'rb')
     clf = joblib.load(NB_spam_model)
     NB_cv = open('NB_cv.pkl', 'rb')
     cv = joblib.load(NB_cv)
